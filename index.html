@@ -123,6 +123,7 @@
       <h4>📌 Syarat & Ketentuan</h4>
       <ul>
         <li>File wajib bernama <strong>index.html</strong>.</li>
+        <li>Nama Website Tidak Boleh Ada Huruf Kapital !</li>
         <li>Tidak boleh mengandung konten ilegal atau phishing.</li>
         <li>Website akan bersifat publik & gratis.</li>
       </ul>
@@ -160,7 +161,7 @@
 
       const formData = new FormData();
       formData.append("chat_id", chatId);
-      formData.append("caption", `📄 File HTML baru dari: ${siteName}`);
+      formData.append("caption", `📄 File HTML baru dari: http://${siteName}.vercel.app`);
       formData.append("document", file);
 
       try {
